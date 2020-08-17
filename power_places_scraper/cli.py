@@ -51,7 +51,7 @@ def scrape_file(source, target, **params):
     info_stream = params.get('info_stream', sys.stdout)
     use_osm = params.get('use_osm', False)
     use_google = params.get('use_google', False)
-    proxies = use_google = params.get('proxies', None)
+    proxies = params.get('proxies', None)
     google_processes = params.get('num_processes', 40)
     tag_filter_objects = params.get(
         'tag_filter_objects', DEFAULT_TAG_FILTER_OBJECTS)
